@@ -1,0 +1,10 @@
+<%- include("../default/header") %>
+<h3>수 정 페 이 지</h3>
+
+<form action="/member/modify" method="post">
+    <input type="text" readonly value="<%= member.ID %>" name="id"><br>
+    <input type="text" value="<%= member.PWD %>" name="pwd"><br>
+    <input type="text" value="<%= member.NAME %>" name="name"><br>
+    <input type="text" value="<%= member.ADDR %>" name="addr"><br>
+    <input type="submit" value="modify"><br>
+</form>
